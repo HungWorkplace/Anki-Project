@@ -47,12 +47,12 @@ const submitStudyHanlder = async (event) => {
   });
 
   const title = document.getElementById("title");
-  const content = document.getElementById("content");
+  const description = document.getElementById("description");
 
   const studyNote = {
-    context: contextList,
-    title: title.value,
-    content: content.value,
+    fields: contextList || [],
+    title: title.value || "",
+    description: description.value || "",
   };
 
   try {
