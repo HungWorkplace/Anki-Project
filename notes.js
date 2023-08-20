@@ -1,9 +1,10 @@
-const showContexts = () => {
+// choose field inputs
+const showFields = () => {
   const contextListEl = document.getElementById("context-list");
   contextListEl.classList.toggle("hidden");
 };
 
-const addContext = () => {
+const addField = () => {
   const fillContextEl = document.getElementById("fill-context");
   const checkboxes = document.querySelectorAll('input[name="context"]:checked');
 
@@ -16,6 +17,8 @@ const addContext = () => {
 
   fillContextEl.textContent = content === "" ? "Select some fields" : content;
 };
+
+// Show/hide form
 const onpenForm = () => {
   const formModel = document.getElementById("form-model");
   formModel.classList.toggle("hidden");
@@ -27,6 +30,7 @@ const closeForm = (event) => {
   formModel.classList.toggle("hidden");
 };
 
+// Submit form
 const submitStudyHanlder = async (event) => {
   event.preventDefault();
 
