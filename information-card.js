@@ -8996,9 +8996,11 @@ var Td = bi.exports,
   Bi = Td;
 (Wl.createRoot = Bi.createRoot), (Wl.hydrateRoot = Bi.hydrateRoot);
 function Rd() {
-  const e = "{{Word}}";
+  const e = document.getElementById("word");
   return St.jsx(St.Fragment, {
-    children: St.jsxs("h1", { children: ["This is ", e, " in card"] }),
+    children: St.jsxs("h1", {
+      children: ["This is ", e == null ? void 0 : e.textContent, " in card"],
+    }),
   });
 }
 Wl.createRoot(document.getElementById("root")).render(
