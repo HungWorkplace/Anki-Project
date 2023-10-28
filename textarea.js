@@ -1,2 +1,2 @@
-const input = document.getElementById("user-input");
-input.value = "Hello";
+const word = document.getElementById("word");
+word.textContent = "{{Word}}";
